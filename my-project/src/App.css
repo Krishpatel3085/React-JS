@@ -1,0 +1,174 @@
+.App {
+  text-align: center;
+}
+
+#footer{
+  margin-top: 80px;
+  width: 100%;
+  height: auto;
+  background-color: rgba(14, 11, 11, 0.841);
+  text-align: center;
+  color: white;
+}
+#footer ul{
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icons{
+  text-align: center;
+  justify-content: center;
+  gap:  30px;
+  display: flex;
+  cursor: pointer;
+  font-size: 25px;
+}
+.icons i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgb(136, 128, 128);
+}
+#css {
+  color: black;
+  text-decoration: none;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.form {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.formstyle {
+  width: 350px;
+  height: 300px;
+  border: 2px solid black;
+  margin: auto;
+  margin-top: 50px;
+  overflow: auto;
+}
+
+.formstyle input {
+  width: 250px;
+  margin: 20px;
+  height: 30px;
+  padding-left: 5px;
+  border: 2px solid red;
+}
+
+.formstyle button {
+  width: 90px;
+  height: 35px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-left: 90px;
+
+}
+
+.formstyle p {
+  margin-left: 10px;
+}
+
+
+#form table {
+  margin: auto;
+  border: 3px solid black;
+  text-align: center;
+}
+
+table tr {
+  height: 50px;
+  border: 2px solid black;
+}
+
+.form-2 {
+  width: 350px;
+  height: 250px;
+  border: 2px solid black;
+  display: block;
+  text-align: center;
+  margin: 40px 0px 0px 550px;
+
+}
+
+.form-2 input {
+  width: 320px;
+  height: 40px;
+
+}
+
+#serch {
+  display: flex;
+  position: relative;
+  left: 300px;
+
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* ====================>  User CSS <========================== */
+
+#user-info {
+  width: 400px;
+  height: 250px;
+  border: 2px solid black;
+  margin: auto;
+  margin-top: 200px;
+  padding: 20px;
+  border-radius: 10px ;
+}
+#user-info h3{
+  text-align: center;
+}
+#user-info input{
+  width: 350px;
+  height: 40px;
+  
+}
+#user-info button{
+  width: 90px;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+#user-info a{
+  margin-inline-start: 30px;
+}
+/* ====================>  User CSS  Finish<========================== */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
