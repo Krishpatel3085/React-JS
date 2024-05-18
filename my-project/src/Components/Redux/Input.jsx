@@ -15,13 +15,11 @@ function Input() {
 
         
     return (
-        <div>
-            <h1>Input</h1>
+        <div id="Redux-Input">
+            <h1>Input To Do Task</h1> <br />
             <form onSubmit={handleForm}>
                 <input type="text" placeholder="Enter TODO" onChange={(e)=>setInput(e.target.value)}/>
-
-                <br />
-                <button >ADD TODO</button>
+                <button ><i class="bi bi-plus-circle"></i></button>
             </form>
         </div>
 

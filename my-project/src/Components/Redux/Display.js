@@ -22,8 +22,8 @@ function Display() {
     }, [data]);
 
     return (
-        <div>
-            <h1>Display</h1>
+        <div id="Redux-Display">
+            <h1>Display To Do Task</h1>
             {
                 data.map((ele, index) => {
                     return (

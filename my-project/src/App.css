@@ -116,8 +116,30 @@ table tr {
 
 }
 
+/* To do List */
 
-
+#Redux-Input{
+  width: 400px;
+  height: 150px;
+  border: 2px solid black;
+  margin: auto;
+  margin-top: 200px;
+  padding: 20px;
+  border-radius: 10px ;
+}
+#Redux-Display{
+  width: 400px;
+  height: auto;
+  border: 2px solid black;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px ;
+}
+#Redux-Input button{
+  width: 80px;
+  margin-inline-start: 10px;
+}
+/* To DO Task Finish */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
