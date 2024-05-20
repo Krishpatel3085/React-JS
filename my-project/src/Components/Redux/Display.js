@@ -27,8 +27,8 @@ function Display() {
             {
                 data.map((ele, index) => {
                     return (
-                        <>
-                            <li key={index}>{ele}</li>
+                        <div id="Displey-Todo">
+                            <li key={index} >{ele}</li>
                             <button
                                 onClick={() => {
                                     const newValue = prompt("Enter Value");
@@ -42,7 +42,7 @@ function Display() {
                             </button>
                             <button onClick={() => deletTodo(index)}>Delete</button>
 
-                        </>
+                        </div>
                     )
                 })
             }
