@@ -19,10 +19,10 @@ function App() {
       const documents = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
       setVal(documents);
     }
-
     getData();
   }, [value]);
 
+  // Add
   const handlecreate = async (e) => {
     e.preventDefault();
     await addDoc(value, { name: name, email: email });
@@ -32,11 +32,13 @@ function App() {
     setShow(false)
   }
 
+  // Delete
   const handleDelete = async (id) => {
     const deleteVal = doc(database, "Demo", id)
     await deleteDoc(deleteVal)
   }
-
+  
+  // Edite
   const handleEdite = (id, name, email) => {
     setId(id)
     setName(name)
@@ -44,6 +46,7 @@ function App() {
     setShow(true)
   }
 
+  // Update
   const handleUpdate = async () => {
     const updateVal = doc(database, "Demo", id)
     await updateDoc(updateVal, { name: name, email: email })
@@ -51,11 +54,9 @@ function App() {
     setName("")
     setEmail("")
     setShow(false)
-
-
-
-
   }
+
+  // Sorting
   const [sort, setSort] = useState(null)
   const HandleSort = (field) => {
     setSort(field)
@@ -63,7 +64,7 @@ function App() {
 
   const sortedlist = sort ? [...val].sort((a, b) => a[sort].localeCompare(b[sort])) : val
 
-
+  // Searching
   const [serchData, setSerchData] = useState("")
   const handleSerch = (e) => {
     setSerchData(e.target.value)
@@ -94,7 +95,7 @@ function App() {
           <th></th>
           <th></th>
           <th>
-          <input id='serch' type="text" placeholder='Serch...' value={serchData} onChange={(e) => handleSerch(e)} />
+            <input id='serch' type="text" placeholder='Serch...' value={serchData} onChange={(e) => handleSerch(e)} />
 
           </th>
         </tr>
