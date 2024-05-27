@@ -68,17 +68,32 @@ function App() {
 
       </form>
 
+      <table border={2}>
+        <tr>
+          <th>No</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+        {
+          val.map((item, index) => (
 
-      {
-        val.map((item) => (
-          <div key={item.id}>
-            <h1>{item.name}</h1>
-            <h2>{item.email}</h2>
-            <button onClick={() => handleDelete(item.id)}>Delete</button>
-            <button onClick={() => handleEdite(item.id, item.name, item.email)}>Edite</button>
-          </div>
-        ))
-      }
+            <tr key={item.id}>
+              <td>{index + 1}</td>
+              <td>{item.name}</td>
+              <td>{item.email}</td>
+              <td>
+
+                <button onClick={() => handleDelete(item.id)}>Delete</button> &nbsp;
+                <button onClick={() => handleEdite(item.id, item.name, item.email)}>Edite</button>
+              </td>
+            </tr>
+
+
+
+          ))
+        }
+      </table >
     </>
   );
 }
