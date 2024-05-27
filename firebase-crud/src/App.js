@@ -51,7 +51,27 @@ function App() {
     setName("")
     setEmail("")
     setShow(false)
+
+
+
+
   }
+  const [sort, setSort] = useState(null)
+  const HandleSort = (field) => {
+    setSort(field)
+  }
+
+  const sortedlist = sort ? [...val].sort((a, b) => a[sort].localeCompare(b[sort])) : val
+
+
+  const [serchData, setSerchData] = useState("")
+  const handleSerch = (e) => {
+    setSerchData(e.target.value)
+  }
+  const filterData = sortedlist.filter((item) => {
+    return item.name.toLowerCase().includes(serchData.toLowerCase()) ||
+      item.email.toLowerCase().includes(serchData.toLowerCase())
+  })
 
   return (
     <>
@@ -70,13 +90,22 @@ function App() {
 
       <table border={2}>
         <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th>
+          <input id='serch' type="text" placeholder='Serch...' value={serchData} onChange={(e) => handleSerch(e)} />
+
+          </th>
+        </tr>
+        <tr>
           <th>No</th>
-          <th>Name</th>
-          <th>Email</th>
+          <th>Name <button onClick={() => HandleSort("name")}><i class="bi bi-arrow-down"></i></button> </th>
+          <th>Email <button onClick={() => HandleSort("name")}><i class="bi bi-arrow-up"></i></button></th>
           <th>Action</th>
         </tr>
         {
-          val.map((item, index) => (
+          filterData.map((item, index) => (
 
             <tr key={item.id}>
               <td>{index + 1}</td>
