@@ -1,10 +1,15 @@
 body {
   color: white;
+  font-family: 'poppins', sans-serif;
+}
+
+#portfolio {
+  display: flex;
 }
 
 #Profile {
   margin: 35px;
-  width: 300px;
+  width: 350px;
   height: 90vh;
   background-color: #1E1E1F;
   border: 2px solid #383838;
@@ -29,39 +34,106 @@ body {
   cursor: pointer;
 }
 
-button::after {
-  position: absolute;
-  content: '';
-  top: 430px;
-  left: 70px;
-  height: 3px;
-  width: 16%;
-  background: #383838;
-
+#Line {
+  width: 80%;
+  height: 2px;
+  background-color: #383838;
+  border: none;
 }
 
-.boxs ul {
-  margin-top: 50px;
-  list-style: none;
-  margin-left: -10px;
-  line-height: 25px;
-}
-.boxs{
+.info {
   display: flex;
-  text-align: left;
 }
-.icon{
-  text-align: center; 
-  margin-top: 50px;
-  margin-left: 30px;
-  width: 50px;
-  height: 50px;
+
+.icon {
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
-  background-color: #202022;
-  box-shadow: -1px -1px 1px 1px #343434;
-  color: #ffdb70;
   font-size: 20px;
+  color: #e0c264;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 10px;
+  box-shadow: -1px -1px 1px 1px #3b3b3b;
 }
+
+.info ul {
+  list-style: none;
+  text-align: left;
+  margin-left: -20px;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#title {
+  font-size: 12px;
+  color: #D6D6D6B2;
+}
+
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  padding-top: 10px;
+}
+
+.social i {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.social a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* About CSS */
+#about{
+  color: white;
+}
+#about h1{
+  color: white;
+}
+#main {
+  width: 90%;
+  height: 90vh;
+  margin: 35px;
+  background-color: #1E1E1F;
+  border: 2px solid #383838;
+  border-radius: 20px;
+}
+
+
+/* Navbar CSS */
+#left {
+  display: flex;
+  justify-content: end;
+  margin: 0;
+  padding: 0;
+}
+
+#nav {
+  width: 500px;
+  height: 70px;
+  margin-top: -16px;
+  background-color: #2B2B2CBF;
+  border: 2px solid #383838;
+  border-top: none;
+  border-right: none;
+  border-bottom-left-radius: 20px;
+  border-start-end-radius: 20px;
+}
+
+#nav ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+
 
 .App {
   text-align: center;
