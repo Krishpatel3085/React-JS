@@ -1,82 +1,84 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import './App.css';
-import { addDoc, collection, deleteDoc, getDocs, doc, updateDoc } from "firebase/firestore";
-import database from './firebase';
+import SignIn from './SignIn';
+import Signup from './Signup';
+// import { addDoc, collection, deleteDoc, getDocs, doc, updateDoc } from "firebase/firestore";
+// import database from './firebase';
 
 
 function App() {
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [val, setVal] = useState([])
-  const [id, setId] = useState("")
-  const [show, setShow] = useState(false)
+  // const [name, setName] = useState("")
+  // const [email, setEmail] = useState("")
+  // const [val, setVal] = useState([])
+  // const [id, setId] = useState("")
+  // const [show, setShow] = useState(false)
 
-  const value = collection(database, "Demo")
+  // const value = collection(database, "Demo")
 
-  useEffect(() => {
-    const getData = async () => {
-      const querySnapshot = await getDocs(value);
-      const documents = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-      setVal(documents);
-    }
-    getData();
-  }, [value]);
+  // useEffect(() => {
+  //   const getData = async () => {
+  //     const querySnapshot = await getDocs(value);
+  //     const documents = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+  //     setVal(documents);
+  //   }
+  //   getData();
+  // }, [value]);
 
-  // Add
-  const handlecreate = async (e) => {
-    e.preventDefault();
-    await addDoc(value, { name: name, email: email });
-    setName("");
-    setEmail("");
-    setId("")
-    setShow(false)
-  }
+  // // Add
+  // const handlecreate = async (e) => {
+  //   e.preventDefault();
+  //   await addDoc(value, { name: name, email: email });
+  //   setName("");
+  //   setEmail("");
+  //   setId("")
+  //   setShow(false)
+  // }
 
-  // Delete
-  const handleDelete = async (id) => {
-    const deleteVal = doc(database, "Demo", id)
-    await deleteDoc(deleteVal)
-  }
-  
-  // Edite
-  const handleEdite = (id, name, email) => {
-    setId(id)
-    setName(name)
-    setEmail(email)
-    setShow(true)
-  }
+  // // Delete
+  // const handleDelete = async (id) => {
+  //   const deleteVal = doc(database, "Demo", id)
+  //   await deleteDoc(deleteVal)
+  // }
 
-  // Update
-  const handleUpdate = async () => {
-    const updateVal = doc(database, "Demo", id)
-    await updateDoc(updateVal, { name: name, email: email })
-    setId("")
-    setName("")
-    setEmail("")
-    setShow(false)
-  }
+  // // Edite
+  // const handleEdite = (id, name, email) => {
+  //   setId(id)
+  //   setName(name)
+  //   setEmail(email)
+  //   setShow(true)
+  // }
 
-  // Sorting
-  const [sort, setSort] = useState(null)
-  const HandleSort = (field) => {
-    setSort(field)
-  }
+  // // Update
+  // const handleUpdate = async () => {
+  //   const updateVal = doc(database, "Demo", id)
+  //   await updateDoc(updateVal, { name: name, email: email })
+  //   setId("")
+  //   setName("")
+  //   setEmail("")
+  //   setShow(false)
+  // }
 
-  const sortedlist = sort ? [...val].sort((a, b) => a[sort].localeCompare(b[sort])) : val
+  // // Sorting
+  // const [sort, setSort] = useState(null)
+  // const HandleSort = (field) => {
+  //   setSort(field)
+  // }
 
-  // Searching
-  const [serchData, setSerchData] = useState("")
-  const handleSerch = (e) => {
-    setSerchData(e.target.value)
-  }
-  const filterData = sortedlist.filter((item) => {
-    return item.name.toLowerCase().includes(serchData.toLowerCase()) ||
-      item.email.toLowerCase().includes(serchData.toLowerCase())
-  })
+  // const sortedlist = sort ? [...val].sort((a, b) => a[sort].localeCompare(b[sort])) : val
+
+  // // Searching
+  // const [serchData, setSerchData] = useState("")
+  // const handleSerch = (e) => {
+  //   setSerchData(e.target.value)
+  // }
+  // const filterData = sortedlist.filter((item) => {
+  //   return item.name.toLowerCase().includes(serchData.toLowerCase()) ||
+  //     item.email.toLowerCase().includes(serchData.toLowerCase())
+  // })
 
   return (
     <>
-      <form >
+      {/* <form >
 
         <input type="text" placeholder='Enter your name...' value={name} onChange={(e) => setName(e.target.value)} /> <br /> <br />
         <input type="email" placeholder='Enter your email...' value={email} onChange={(e) => setEmail(e.target.value)} /> <br /> <br />
@@ -123,7 +125,12 @@ function App() {
 
           ))
         }
-      </table >
+      </table > */}
+
+      <Signup />
+      <hr/>
+      <SignIn/>
+
     </>
   );
 }
