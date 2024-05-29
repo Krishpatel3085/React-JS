@@ -1,11 +1,13 @@
 // import { addDoc, collection, deleteDoc, getDocs, doc, updateDoc } from "firebase/firestore";
 // import database from './firebase';
 // import { useEffect, useState } from 'react';
+
 import './App.css';
 import { useEffect, useState } from 'react';
 import SignIn from './SignIn';
 import Signup from './Signup';
 import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
+import { Route, Routes } from 'react-router-dom';
 import app from './firebase';
 const auth = getAuth(app)
 
@@ -137,11 +139,11 @@ const auth = getAuth(app)
 
 
 
-function App(){
+function App() {
   const [user, setUSer] = useState(null)
   useEffect(() => {
-    onAuthStateChanged(auth,(user) => {
-      if(user) {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
         console.log(user)
         setUSer(user)
       } else {
@@ -153,8 +155,10 @@ function App(){
   if (user === null) {
     return (
       <>
-    
-        <SignIn />
+        <Routes>
+          <Route path="/" element={ <SignIn/>  } />
+          <Route path="/signup" element={<Signup />} />
+        </Routes >
       </>
     )
   }
@@ -162,7 +166,7 @@ function App(){
   return (
     <>
       <h1>Hell0{user.email}</h1>
-      <button   onClick={()=>signOut(auth)}>LogOut</button>
+      <button onClick={() => signOut(auth)}>LogOut</button>
     </>
   )
 };

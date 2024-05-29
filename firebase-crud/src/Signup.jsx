@@ -3,6 +3,8 @@ import app from './firebase.js'
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
 import imgs from './img/google2.png'
 import SignIn from './SignIn.jsx'
+import { Link, useNavigate } from 'react-router-dom'
+
 const auth = getAuth(app)
 export default function Signup() {
 
@@ -11,6 +13,10 @@ export default function Signup() {
 
     const SignUp = () => {
         createUserWithEmailAndPassword(auth, email, password).then((value) => console.log(value, "Success")).catch((err) => console.log(err))
+    }
+    const navigate = useNavigate()
+    const Signin = () => {
+        navigate("/")
     }
     return (
 
@@ -26,8 +32,10 @@ export default function Signup() {
                 <br /><br />
                 <input type="password" placeholder='Enter your Password' value={password} onChange={(e) => setPassword(e.target.value)} />
                 <br /><br />
-                <a href={<SignIn/>}>Sign In </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+
+
+                <a onClick={Signin}>Sign in</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button onClick={SignUp}>Sign Up</button>
             </div>
         </div>

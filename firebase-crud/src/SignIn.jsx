@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 import app from './firebase'
 import imgs from './img/google2.png'
-import Signup from './Signup'
+// import Signup from './Signup'
+import { Link, useNavigate } from 'react-router-dom'
 
 const auth = getAuth(app)
 export default function SignIn() {
@@ -14,7 +15,10 @@ export default function SignIn() {
         signInWithEmailAndPassword(auth, email, Password).then((value) => console.log(value, "SignIn Success")).catch((err) => console.log(err))
 
     }
-
+    const navigate = useNavigate()
+    const SignUp = () => {
+        navigate("/signup")
+    }
     return (
         <div id='signup'>
             <div className="ex">
@@ -27,8 +31,11 @@ export default function SignIn() {
                 <br /><br />
                 <input type="Password" placeholder='Enter Your Password' value={Password} onChange={(e) => setPassword(e.target.value)} />
                 <br /><br />
-                <a href={<Signup/>}>Create Account</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+             
+                <a onClick={SignUp}>Create Account</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button onClick={SignIn}>Sign In</button>
+
             </div>
         </div>
     )

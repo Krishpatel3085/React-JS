@@ -10,7 +10,6 @@ export default function Home() {
     <>
       <div>Home</div>
       {/* <Link to="/about">Go to About</Link> */}
-
       <button onClick={goToAboutPage}> Go To About Page</button>
     </>
   )
