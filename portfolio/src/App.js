@@ -1,24 +1,17 @@
-
 import './App.css';
-import About from './Components/About';
-import { Route, Routes } from 'react-router-dom';
+// import About from './Components/About';
 // import Main from './Main';
-import Profile from './Profile';
-import Resume from './Components/Resume';
+import Profile from './Components/Profile';
+// import Resume from './Components/Resume';
+import Main from './Components/Main';
 
 function App() {
   return (
     <>
-
-      <Profile />
-
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        {/* <Route path="/contact" element={<Contact />} /> */}
-
-      </Routes >
-
+      <div className='cont'>
+        <Profile />
+        <Main />
+      </div>
     </>
   );
 }

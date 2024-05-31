@@ -1,10 +1,10 @@
-#part {
+.cont {
   height: 100vh;
-  display: flex;
   background-color: black;
-  width: 100%;
-  color: white;
   font-family: 'poppins', sans-serif;
+  color: white;
+  display: flex;
+
 }
 
 #Profile {
@@ -69,6 +69,7 @@
   text-align: center;
   margin-left: 20px;
   margin-top: 8px;
+  background: #202022;
   box-shadow: -1px -1px 1px 1px #3b3b3b;
 }
 
@@ -114,10 +115,11 @@
 
 
 /* Main */
-#cont{
+#cont {
   margin-top: 15px;
   margin-left: 54px;
 }
+
 #main {
   width: 90%;
   height: auto;
@@ -130,17 +132,10 @@
 
 
 /* Navbar CSS */
-#left {
-  display: flex;
-  justify-content: end;
-  margin: 0;
-  padding: 0;
-}
 
 #nav {
   width: 500px;
   height: 70px;
-  margin-top: -16px;
   background-color: #2B2B2CBF;
   border: 2px solid #383838;
   border-top: none;
@@ -148,6 +143,8 @@
   border-bottom-left-radius: 20px;
   border-start-end-radius: 20px;
   display: flex;
+  position: absolute;
+  left: 64%;
 }
 
 #nav ul {
@@ -158,8 +155,38 @@
   cursor: pointer;
 }
 
-
-
+/* About css */
+#about h2::after ,#resume h2::after ,#portfolio h2::after,#contact h2::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 8px;
+  border-radius: 20px;
+  top: 120px;
+  left: 390px;
+  background-color: #e0c264;
+}
+#about p , .boxs p{
+  color: #D6D6D6;
+}
+.boxs{
+  width: 490px;
+  height: 140px;
+  border-radius: 20px;
+  display: flex;
+  gap: 20px;
+  padding: 25px;
+  background: #202022;
+  box-shadow: -1.8px -1.5px 1px  0px #3b3b3b;
+}
+ .boxs i{
+color: #e0c264;
+font-size: 40px;
+}
+#box{
+  display: flex;
+  gap:40px ;
+}
 .App {
   text-align: center;
 }
