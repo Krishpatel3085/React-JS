@@ -4,6 +4,7 @@ import About from './About';
 import Resume from './Resume';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+
 export default function Main() {
     const navigate = useNavigate()
     const gotoResume = () => {
@@ -22,7 +23,7 @@ export default function Main() {
     return (
         <>
             <div className="container" id='main'>
-
+                
                 <nav id='nav'>
                     <ul>
                         <li onClick={gotoAbout}>About</li>

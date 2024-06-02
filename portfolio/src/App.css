@@ -1,5 +1,6 @@
+
 .cont {
-  height: 100vh;
+  height: auto;
   background-color: black;
   font-family: 'poppins', sans-serif;
   color: white;
@@ -104,33 +105,6 @@
 }
 
 
-/* About CSS */
-#about {
-  color: white;
-}
-
-#about h1 {
-  color: white;
-}
-
-
-/* Main */
-#cont {
-  margin-top: 15px;
-  margin-left: 54px;
-}
-
-#main {
-  width: 90%;
-  height: auto;
-  margin: 35px;
-  margin-left: 0px;
-  background-color: #1E1E1F;
-  border: 2px solid #383838;
-  border-radius: 20px;
-}
-
-
 /* Navbar CSS */
 
 #nav {
@@ -155,8 +129,28 @@
   cursor: pointer;
 }
 
-/* About css */
-#about h2::after ,#resume h2::after ,#portfolio h2::after,#contact h2::after {
+
+
+/* Main */
+
+
+#main {
+  width: 90%;
+  height: auto;
+  margin: 35px;
+  margin-left: 0px;
+  background-color: #1E1E1F;
+  border: 2px solid #383838;
+  border-radius: 20px;
+}
+
+
+/* About CSS */
+
+#about h2::after,
+#resume h2::after,
+#portfolio h2::after,
+#contact h2::after {
   content: '';
   position: absolute;
   width: 60px;
@@ -166,10 +160,13 @@
   left: 390px;
   background-color: #e0c264;
 }
-#about p , .boxs p{
+
+#about p,
+.boxs p {
   color: #D6D6D6;
 }
-.boxs{
+
+.boxs {
   width: 490px;
   height: 140px;
   border-radius: 20px;
@@ -177,16 +174,129 @@
   gap: 20px;
   padding: 25px;
   background: #202022;
-  box-shadow: -1.8px -1.5px 1px  0px #3b3b3b;
+  box-shadow: -1.8px -1.5px 1px 0px #3b3b3b;
 }
- .boxs i{
-color: #e0c264;
-font-size: 40px;
+
+.boxs i {
+  color: #e0c264;
+  font-size: 40px;
 }
-#box{
+
+#box {
   display: flex;
-  gap:40px ;
+  gap: 40px;
 }
+
+
+
+/* Resume CSS */
+.head {
+  display: flex;
+  gap: 25px;
+  
+}
+
+.head h3 {
+  font-size: 24px;
+  color: #FAFAFA;
+}
+
+.icon-2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #e0c264;
+  text-align: center;
+  background: #202022;
+  box-shadow: #3b3b3b 0px 50px 100px -20px, #3b3b3b 0px 30px 60px -30px,#3b3b3b 1px 1px 0.9px 0px inset;
+}
+
+.head::before {
+  content: '';
+  position: absolute;
+  height: 290px;
+  width: 0.5px;
+  left: 409px;
+  top: 196px;
+  background-color: #3b3b3b;
+}
+
+.head::after  {
+  content: "";
+  position: absolute;
+  top: 221px;
+  left: 403.6px;
+  height: 10px;
+  width: 10px;
+  background-color: #e0c264;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 5px  #383838;
+} 
+.degrees::after {
+  content: "";
+  position: absolute;
+  top: 341px;
+  left: 403.6px;  
+  height: 10px;
+  width: 10px;
+  background-color: #e0c264;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 5px  #383838;
+} 
+.degrees p::after {
+  content: "";
+  position: absolute;
+  top: 481px;
+  left: 403.6px;
+  height: 10px;
+  width: 10px;
+  background-color: #e0c264;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 5px  #383838;
+}
+.degrees {
+  margin-inline-start: 65px;
+}
+
+.degrees span {
+  color: #ceb15a;
+  margin: 0px;
+}
+
+.degrees p {
+  color: #D6D6D6;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.degrees h4 {
+  font-size: 16px;
+  
+}
+.skill{
+  width: 97%;
+  height: 200px;
+  background: #202022;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: -2px -2px 0px 0px  #383838;
+  margin-inline-start: 15px;
+}
+.skills h3{
+  margin-inline-start: 15px;
+}
+#bar{
+  height: 10px;
+  color: #ceb15a;
+  background-color: #383838;
+}
+
+
+
+
+
+
 .App {
   text-align: center;
 }
@@ -195,7 +305,6 @@ font-size: 40px;
   height: 40vmin;
   pointer-events: none;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
