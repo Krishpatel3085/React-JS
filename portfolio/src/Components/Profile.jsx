@@ -1,5 +1,7 @@
 import React from 'react'
-import imge from './img/_DSC1149.JPG'
+// import imge from './img/_DSC1149.JPG'
+import imge from './img/krish.jpg'
+
 // import About from './Components/About'
 
 export default function Profile() {

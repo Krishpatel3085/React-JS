@@ -59,7 +59,12 @@ export default function Resume() {
                 <br />
                 <div className="skill">
                   <h5>Web Design 95%</h5>
-                  <ProgressBar now={95}  id='bar'/>
+                  <ProgressBar now={95} id='bar' class='progress-95' />  <br />
+                  <h5>Web Devlopment 90%</h5>
+                  <ProgressBar now={90} id='bar' /> <br />
+                  <h5>Git 94%</h5>
+                  <ProgressBar now={94} id='bar' /> <br />
+
                 </div>
               </div>
 

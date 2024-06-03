@@ -14,19 +14,20 @@ export default function Main() {
     const gotoAbout = () => {
         navigate("/")
     }
-    const gotoPortfolio = () =>{
+    const gotoPortfolio = () => {
         navigate("/portfolio")
     }
-    const gotoContact = () =>{
+    const gotoContact = () => {
         navigate("/contact")
     }
+
     return (
         <>
             <div className="container" id='main'>
-                
+
                 <nav id='nav'>
                     <ul>
-                        <li onClick={gotoAbout}>About</li>
+                        <li onClick={gotoAbout} >About</li>
                         <li onClick={gotoResume}>Resume</li>
                         <li onClick={gotoPortfolio}> Portfolio</li>
                         <li onClick={gotoContact}>Contact</li>

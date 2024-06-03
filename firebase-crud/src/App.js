@@ -10,7 +10,7 @@ import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
 import { Route, Routes } from 'react-router-dom';
 import app from './firebase';
 const auth = getAuth(app)
-
+ 
 // function App() {
 // const [name, setName] = useState("")
 // const [email, setEmail] = useState("")
