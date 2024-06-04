@@ -1,11 +1,11 @@
 import React from 'react'
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
+
 export default function Resume() {
 
 
-  function BasicExample() {
-  }
+
 
 
   return (
@@ -63,7 +63,7 @@ export default function Resume() {
                   <h5>Web Devlopment 90%</h5>
                   <ProgressBar now={90} id='bar' /> <br />
                   <h5>Git 94%</h5>
-                  <ProgressBar now={94} id='bar' /> <br />
+                  <ProgressBar now={94} id='bar' variant="" /> <br />
 
                 </div>
               </div>
