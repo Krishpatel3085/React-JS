@@ -1,10 +1,29 @@
 import React from 'react'
-// import imge from './img/_DSC1149.JPG'
 import imge from './img/krish.jpg'
-
-// import About from './Components/About'
+import cv from './img/resume.pdf'
 
 export default function Profile() {
+    
+        const downloadResume = () => {
+            fetch(cv, {
+                method: 'GET',
+                headers: { 'Content-Type': 'application/pdf' }
+            })
+            .then(response => response.blob())
+            .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.setAttribute('download', cv);
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            })
+            .catch(error => {
+                console.error('Error fetching file:', error);
+            });
+        }
+  
     return (
         <>
             <div className="container" id='Profile'>
@@ -13,7 +32,7 @@ export default function Profile() {
                         <img src={imge} alt="" />
                         <h3>Krish Kaila</h3>
                         <h4>FullStack-Devloper</h4>
-                        <button>Download CV</button>
+                        <button className='download' onClick={downloadResume}>Download CV</button>  
                         <br />
 
                         <div id='Line'>

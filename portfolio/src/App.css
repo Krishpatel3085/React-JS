@@ -15,11 +15,11 @@
   border: 2px solid #383838;
   border-radius: 20px;
   text-align: center;
-  position: relative;
+  position: static;
 }
 
 #Profile img {
-  width: 180px;
+  width: 180px; 
   height: 180px;
   border-radius: 50%;
   margin: 20px;
@@ -345,6 +345,40 @@
   display: flex;
   justify-content: end;
 }
+
+
+/* Portfolio */
+#portfolio{
+  width: 1078px;
+}
+#portfo img{
+  width: 320px;
+  height: 220px;
+  border-radius: 20px;
+}
+
+#portfo h3{
+  font-size: 20px;
+  color: #FAFAFA;
+  margin-inline-start: 15px;
+  margin-top: 15px;
+}
+#portfo p{
+  font-size: 15px;
+  color: #D6D6D6B2;
+  margin-inline-start: 15px;
+  margin-top: -5px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .App {
   text-align: center;
