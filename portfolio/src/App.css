@@ -1,5 +1,8 @@
+element.style {
+  background-color: black;
+}
+
 .cont {
-  height: auto;
   background-color: black;
   font-family: 'poppins', sans-serif;
   color: white;
@@ -9,17 +12,17 @@
 
 #Profile {
   margin: 35px;
-  width: 350px;
-  height: 90vh;
+  width: 280px;
+  height: auto;
   background-color: #1E1E1F;
   border: 2px solid #383838;
   border-radius: 20px;
   text-align: center;
-  position: static;
+
 }
 
 #Profile img {
-  width: 180px; 
+  width: 180px;
   height: 180px;
   border-radius: 50%;
   margin: 20px;
@@ -116,9 +119,8 @@
   border-right: none;
   border-bottom-left-radius: 20px;
   border-start-end-radius: 20px;
-  display: flex;
-  position: absolute;
-  left: 64%;
+  float: right;
+
 }
 
 #nav ul {
@@ -129,8 +131,8 @@
   cursor: pointer;
 }
 
-.active{
-  color:#ebca69;
+.active {
+  color: #ebca69;
 }
 
 /* Main */
@@ -140,10 +142,12 @@
   width: 90%;
   height: auto;
   margin: 35px;
+  padding: 0;
   margin-left: 0px;
   background-color: #1E1E1F;
   border: 2px solid #383838;
   border-radius: 20px;
+  position: relative;
 }
 
 
@@ -158,8 +162,8 @@
   width: 60px;
   height: 8px;
   border-radius: 20px;
-  top: 120px;
-  left: 370px;
+  top: 80px;
+  left: 30px;
   background-color: #e0c264;
 }
 
@@ -167,6 +171,9 @@
 #about p,
 .boxs p {
   color: #D6D6D6;
+  margin: 0;
+  padding: 0;
+  width: 950px;
 }
 
 .boxs {
@@ -190,6 +197,9 @@
   gap: 40px;
 }
 
+#box p {
+  width: 400px;
+}
 
 
 /* Resume CSS */
@@ -218,18 +228,18 @@
 .head::before {
   content: '';
   position: absolute;
-  height: 290px;
+  height: 275px;
   width: 0.5px;
-  left: 387px;
-  top: 195px;
+  left: 47px;
+  top: 158px;
   background-color: #3b3b3b;
 }
 
 .head::after {
   content: "";
   position: absolute;
-  top: 221px;
-  left: 382.6px;
+  top: 185px;
+  left: 42.6px;
   height: 10px;
   width: 10px;
   background-color: #e0c264;
@@ -240,8 +250,8 @@
 .degrees::after {
   content: "";
   position: absolute;
-  top: 341px;
-  left: 382.6px;
+  top: 305px;
+  left: 42.6px;
   height: 10px;
   width: 10px;
   background-color: #e0c264;
@@ -252,8 +262,8 @@
 .degrees p::after {
   content: "";
   position: absolute;
-  top: 481px;
-  left: 382.6px;
+  top: 425px;
+  left: 42.6px;
   height: 10px;
   width: 10px;
   background-color: #e0c264;
@@ -304,7 +314,84 @@
 
 
 
+
+
+/* Portfolio */
+#portfolio {
+  width: 1078px;
+}
+
+#portfo {
+  position: relative;
+}
+
+#portfo:hover {
+  transform: scale(0.99);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  background-blend-mode: hue;
+}
+
+#portfo:hover #buto {
+  transform: scale(0.99);
+  transition: all 0.5s ease-in-out;
+  display: block;
+  opacity: 1;
+}
+
+#portfo h3:hover {
+  opacity: 1;
+}
+
+#portfo img {
+  width: 320px;
+  height: 220px;
+  border-radius: 20px;
+}
+
+#portfo h3 {
+  font-size: 20px;
+  color: #FAFAFA;
+  margin-inline-start: 15px;
+  margin-top: 15px;
+  opacity: 1;
+}
+
+#portfo p {
+  font-size: 15px;
+  color: #D6D6D6B2;
+  margin-inline-start: 15px;
+  margin-top: -5px;
+}
+
+
+
+#buto {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  background-color: #3b3b3b;
+  border-radius: 10px;
+  border: none;
+  color: #ceb15a;
+  position: absolute;
+  top: 90px;
+  left: 140px;
+  display: none;
+}
+
+
+
 /* Contact */
+#contact{
+  width: 1065px;
+}
+form{
+  width: 1010px;
+  display: flex;
+  gap: 20px;
+}
+
 #contact input {
   width: 505px;
   height: 60px;
@@ -317,7 +404,7 @@
 }
 
 #contact textarea {
-  width: 1045px;
+  width: 1010px;
   height: 150px;
   background-color: transparent;
   border-radius: 10px;
@@ -329,7 +416,6 @@
 #contact button {
   width: 200px;
   height: 50px;
-  margin-left: 20px;
   color: #e0c264;
   border: 2px solid #383838;
   border-radius: 10px;
@@ -338,84 +424,10 @@
   cursor: pointer;
   text-align: center;
   font-size: 18px;
-
+  margin-right: 20px;
 }
 
 #button {
   display: flex;
   justify-content: end;
-}
-
-
-/* Portfolio */
-#portfolio{
-  width: 1078px;
-}
-#portfo img{
-  width: 320px;
-  height: 220px;
-  border-radius: 20px;
-}
-
-#portfo h3{
-  font-size: 20px;
-  color: #FAFAFA;
-  margin-inline-start: 15px;
-  margin-top: 15px;
-}
-#portfo p{
-  font-size: 15px;
-  color: #D6D6D6B2;
-  margin-inline-start: 15px;
-  margin-top: -5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -7,6 +7,7 @@ import Contact from './Contact';
 
 export default function Main() {
     const navigate = useNavigate()
+    
     const [activePage , setActivepage] = useState('about');
 
     const gotoResume = () => {
@@ -29,10 +30,6 @@ export default function Main() {
         setActivepage('contact');
 
     }
-
-   
-
-    
     return (
         <>
             <div className="container" id='main'>

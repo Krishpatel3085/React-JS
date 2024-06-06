@@ -7,7 +7,7 @@ export default function About() {
             <div id="about">
                 <div className="contatiner py-4 p-3">
                     <div className="row">
-                        <div className="col-md-12 " id="about">
+                        <div className="col-md-12 " >
 
                             <h2>About Me</h2>
                             <br /><br />
