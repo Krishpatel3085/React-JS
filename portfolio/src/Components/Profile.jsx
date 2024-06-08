@@ -28,7 +28,7 @@ export default function Profile() {
         <>
             <div className="container" >
                 <div className="row">
-                    <div className="col-md-12">
+                    <div className="col-md-12 col-xxl-12">
                         <div id="Profile">
 
                             <img src={imge} alt="" />

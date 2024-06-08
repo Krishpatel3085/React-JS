@@ -36,7 +36,7 @@ export default function Resume() {
                   <h4>Swarrnim Startup And Innovations University</h4>
                   <span>2023 - On Going</span>
                   <p>To secure a challenging position as IT professional to use my software and analytical skills for the progress of organisation and attain career targets.</p>
-
+                  <br />
 
                   <h4>Red & White Multimedia Education</h4>
                   <span>2023 - 2024</span>
@@ -44,7 +44,7 @@ export default function Resume() {
                     web development experience, content management knowledge, multimedia programming, time management, and creativity. Successful candidates usually hold at least and Associate's Degree in a relevant field, such as Bachelor of Computer Applications.
                   </p>
 
-
+<br />
                   <h4>GHSEB</h4>
                   <span>2022 - 2023</span>
                   <p>

@@ -8,6 +8,7 @@
         width: 900px;
         display: flex;
         margin: auto;
+        position: static;
     }
 
     #Line {
@@ -49,6 +50,15 @@
     #resume p {
         width: 780px;
     }
+    .head::before {
+        height: 307px;
+    }
+    .degrees::after{
+        top:322px;
+    }
+    .degrees p::after {
+        top: 460px;
+    }
 
     .skill {
         width: 810px;
@@ -63,19 +73,24 @@
         height: 200px;
         border-radius: 20px;
     }
-    form{
+
+    form {
         width: 900px;
     }
-    #contact{
+
+    #contact {
         width: 900px;
     }
+
     #contact iframe {
         width: 840px;
     }
-    #contact input{
+
+    #contact input {
         width: 410px;
-        
+
     }
+
     #contact textarea {
         width: 840px;
     }
