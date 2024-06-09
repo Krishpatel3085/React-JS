@@ -82,6 +82,7 @@ export default function Profile() {
                                 <div className="social">
                                     <a href="https://www.linkedin.com/in/kaila-krish3085/"> <i class="bi bi-linkedin"> </i></a>
                                     <i class="bi bi-github"></i>
+                                    <i class="bi bi-instagram"></i>
                                     <br /><br />
                                 </div>
                             </div>
