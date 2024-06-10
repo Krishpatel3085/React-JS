@@ -1,3 +1,5 @@
+/* 1024px Screen */
+
 @media(min-width:1024px)and (max-width:1249px) {
 
     .cont {
@@ -50,12 +52,139 @@
     #resume p {
         width: 780px;
     }
+
     .head::before {
         height: 307px;
     }
-    .degrees::after{
-        top:322px;
+
+    .degrees::after {
+        top: 322px;
     }
+
+    .degrees p::after {
+        top: 460px;
+    }
+
+    .skill {
+        width: 810px;
+    }
+
+    #portfolio {
+        width: 900px;
+    }
+
+    #portfo img {
+        width: 276px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    form {
+        width: 900px;
+    }
+
+    #contact {
+        width: 900px;
+    }
+
+    #contact iframe {
+        width: 840px;
+    }
+
+    #contact input {
+        width: 410px;
+
+    }
+
+    #contact textarea {
+        width: 840px;
+    }
+}
+
+/* 768PX Screen */
+
+@media(min-width:768px)and (max-width:1023px) {
+
+    #nav{
+        position: fixed ;
+        display: flex;
+        justify-content: center;
+        top: 92vh;
+        width: 100%;
+        margin-left: 0px;
+        height: 80px;
+        border-top-left-radius:20px  ;
+        border-bottom-left-radius:0px ;
+        background: hsla(240, 1%, 17%, 0.75);
+        backdrop-filter: blur(10px);
+        right: 0px;
+    }
+
+    .cont {
+        padding-top: 50px;
+        display: block;
+    }
+
+    #Profile {
+        width: 700px;
+        display: flex;
+        margin: auto;
+        position: static;
+    }
+
+    #Line {
+        display: none;
+    }
+
+    #name {
+        align-self: center;
+    }
+
+    .download {
+        align-self: center;
+        margin-inline-start: 50px;
+    }
+
+    #main {
+        width: 700px;
+        height: auto;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .boxs {
+        width: 658px;
+        height: 140px;
+        gap: 20px;
+        padding: 25px;
+        margin-top: 20px;
+    }
+
+    #about p,
+    .boxs p {
+        width: 650px;
+    }
+
+    #box p {
+        width: 300px;
+    }
+
+    #box {
+        display: block;
+    }
+
+    #resume p {
+        width: 780px;
+    }
+
+    .head::before {
+        height: 307px;
+    }
+
+    .degrees::after {
+        top: 322px;
+    }
+
     .degrees p::after {
         top: 460px;
     }

@@ -143,7 +143,6 @@ element.style {
   height: auto;
   margin: 35px;
   padding: 0;
-  margin-left: 0px;
   background-color: #1E1E1F;
   border: 2px solid #383838;
   border-radius: 20px;
@@ -273,6 +272,7 @@ element.style {
 
 .degrees {
   margin-inline-start: 65px;
+  padding-right: 20px;
 }
 
 .degrees span {
@@ -291,7 +291,7 @@ element.style {
 }
 
 .skill {
-  width: 1031px;
+  width: 980px;
   height: 230px;
   background: #202022;
   padding: 20px;

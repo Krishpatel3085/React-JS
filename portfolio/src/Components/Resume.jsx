@@ -44,7 +44,7 @@ export default function Resume() {
                     web development experience, content management knowledge, multimedia programming, time management, and creativity. Successful candidates usually hold at least and Associate's Degree in a relevant field, such as Bachelor of Computer Applications.
                   </p>
 
-<br />
+                  <br />
                   <h4>GHSEB</h4>
                   <span>2022 - 2023</span>
                   <p>
