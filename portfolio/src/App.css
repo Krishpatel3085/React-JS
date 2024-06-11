@@ -321,9 +321,6 @@ element.style {
   width: 1078px;
 }
 
-#portfo {
-  position: relative;
-}
 
 #portfo:hover {
   transform: scale(0.99);

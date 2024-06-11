@@ -37,7 +37,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-12" id='button'>
+                        <div className="col-md-12 col-sm-12" id='button'>
                             <button><i class="bi bi-send-fill"></i> Send Message</button>
                         </div>
                     </div>
