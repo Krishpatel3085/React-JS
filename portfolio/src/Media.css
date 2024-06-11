@@ -165,6 +165,7 @@
     #contact h2::after {
         top: 70px;
         left: 18px;
+        font-size: 32px;
     }
 
     .boxs {
@@ -173,12 +174,7 @@
         margin-top: 20px;
     }
 
-    #about h2::after,
-    #resume h2::after,
-    #portfolio h2::after,
-    #contact h2::after {
-        font-size: 32px;
-    }
+
 
     #about p,
     .boxs p {
@@ -257,4 +253,187 @@
     #contact textarea {
         width: 660px;
     }
+}
+
+
+
+
+
+/* 425PX Screen */
+
+@media(min-width:425px)and (max-width:767px) {
+
+    #nav {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        top: 90vh;
+        width: 100%;
+        margin-left: 0px;
+        height: 10vh;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 0px;
+        background: hsla(240, 1%, 17%, 0.75);
+        backdrop-filter: blur(10px);
+        right: 0px;
+    }
+    #nav ul {
+       
+        gap: 25px;
+       font-size: 14px;
+      }
+    .cont {
+        padding-top: 50px;
+        display: block;
+    }
+
+    #Profile {
+        width: 400px;
+        height: 200px;
+        display: flex;
+        margin: auto;
+        position: static;
+    }
+
+    #name h3 {
+        font-size: 17px;
+    }
+
+    #name h4 {
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+    #name {
+        align-self: center;
+    }
+
+    #Profile img {
+        align-self: center;
+        width: 130px;
+        height: 130px;
+    }
+
+    #Profile button {
+        height: auto;
+        margin-right: 10px;
+    }
+
+    #Line {
+        display: none;
+    }
+
+
+    .download {
+        align-self: center;
+        margin-inline-start: 50px;
+    }
+
+    #main {
+        width: 410px;
+        height: auto;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 15vh;
+    }
+
+    /* About Media Css */
+    #about h2::after,
+    #resume h2::after,
+    #portfolio h2::after,
+    #contact h2::after {
+        top: 70px;
+        font-size: 32px;
+        left: 18px;
+    }
+
+    #about p,
+    .boxs p {
+        width: 375px;
+        font-size: 14px;
+    }
+
+    .boxs {
+        width: 378px;
+        height: auto;
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    #box p {
+        width: 300px;
+    }
+
+    #box {
+        display: block;
+    }
+
+    /* Reume Media */
+
+    .head::before {
+        left: 35px;
+        top: 153px;
+        height: 425px;
+    }
+
+    .head::after {
+        top: 179px;
+        left: 30.6px;
+    }
+
+    .degrees::after {
+        top: 355px;
+        left: 30.6px;
+    }
+
+    .degrees p::after {
+        top: 572px;
+        left: 29.6px;
+    }
+
+    #resume p {
+        width: 320px;
+        font-size: 14px;
+    }
+
+    .skill {
+        width: 350px;
+    }
+
+    /* Portfolio */
+
+    #portfolio {
+        width: 400px;
+    }
+
+    #portfo img {
+        width: 370px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    /* Contact Media */
+
+    form {
+        width: 400px;
+        display: block;
+    }
+
+    #contact {
+        width: 400px;
+    }
+
+    #contact iframe {
+        width: 370px;
+    }
+
+    #contact input {
+        width: 370px;
+    }
+
+    #contact textarea {
+        width: 370px;
+    }
+  
 }

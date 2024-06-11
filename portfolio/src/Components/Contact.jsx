@@ -23,7 +23,7 @@ export default function Contact() {
                             <form>
 
 
-                                <input type="text" placeholder='Full name' />
+                                <input type="text" placeholder='Full name' /> 
                                 <input type="text" placeholder='Email address' />
 
 
