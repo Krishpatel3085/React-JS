@@ -11,6 +11,7 @@
         display: flex;
         margin: auto;
         position: static;
+        margin-top: 5vh;
     }
 
     #Line {
@@ -31,6 +32,8 @@
         height: auto;
         margin: auto;
         margin-top: 30px;
+        margin-bottom: 5vh;
+
     }
 
     .boxs {
@@ -256,13 +259,9 @@
 }
 
 
+/* 580Px to 767px */
 
-
-
-/* 425PX Screen */
-
-@media(min-width:425px)and (max-width:767px) {
-
+@media(min-width:580px)and (max-width:766px) {
     #nav {
         position: fixed;
         display: flex;
@@ -277,18 +276,19 @@
         backdrop-filter: blur(10px);
         right: 0px;
     }
+
     #nav ul {
-       
         gap: 25px;
-       font-size: 14px;
-      }
+        font-size: 14px;
+    }
+
     .cont {
         padding-top: 50px;
         display: block;
     }
 
     #Profile {
-        width: 400px;
+        width: auto;
         height: 200px;
         display: flex;
         margin: auto;
@@ -330,7 +330,7 @@
     }
 
     #main {
-        width: 410px;
+        width: 520px;
         height: auto;
         margin: auto;
         margin-top: 30px;
@@ -349,12 +349,194 @@
 
     #about p,
     .boxs p {
-        width: 375px;
+        width: auto;
         font-size: 14px;
     }
 
     .boxs {
-        width: 378px;
+        width: auto;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+        text-align: start;
+    }
+
+    #box p {
+        width: auto;
+    }
+
+    #box {
+        display: block;
+    }
+
+    /* Reume Media */
+
+    .head::before {
+        left: 35px;
+        top: 153px;
+        height: 345px;
+    }
+
+    .head::after {
+        top: 179px;
+        left: 30.6px;
+    }
+
+    .degrees::after {
+        top: 315px;
+        left: 30.6px;
+    }
+
+    .degrees p::after {
+        top: 495px;
+        left: 29.6px;
+    }
+
+    #resume p {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .skill {
+        width: auto;
+    }
+
+    /* Portfolio */
+
+    #portfolio {
+        width: 520px;
+    }
+
+    #portfo img {
+        width: 480px;
+        ;
+        height: 260px;
+        border-radius: 20px;
+    }
+
+    /* Contact Media */
+
+    form {
+        width: 520px;
+        display: block;
+    }
+
+    #contact {
+        width: 520px;
+    }
+
+    #contact iframe {
+        width: 480px;
+    }
+
+    #contact input {
+        width: 480px;
+    }
+
+    #contact textarea {
+        width: 480px;
+    }
+}
+
+/* 425PX Screen */
+
+@media(min-width:425px)and (max-width:579px) {
+
+    #nav {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        top: 90vh;
+        width: 100%;
+        margin-left: 0px;
+        height: 10vh;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 0px;
+        background: hsla(240, 1%, 17%, 0.75);
+        backdrop-filter: blur(10px);
+        right: 0px;
+    }
+
+    #nav ul {
+
+        gap: 25px;
+        font-size: 14px;
+    }
+
+    .cont {
+        padding-top: 50px;
+        display: block;
+    }
+
+    #Profile {
+        width: auto;
+        height: 200px;
+        display: flex;
+        margin: auto;
+        position: static;
+    }
+
+    #name h3 {
+        font-size: 17px;
+    }
+
+    #name h4 {
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+    #name {
+        align-self: center;
+    }
+
+    #Profile img {
+        align-self: center;
+        width: 130px;
+        height: 130px;
+    }
+
+    #Profile button {
+        height: auto;
+        margin-right: 10px;
+    }
+
+    #Line {
+        display: none;
+    }
+
+
+    .download {
+        align-self: center;
+        margin-inline-start: 50px;
+    }
+
+    #main {
+        width: auto;
+        height: auto;
+        margin: auto;
+        margin: 13px;
+        margin-top: 30px;
+        margin-bottom: 15vh;
+    }
+
+    /* About Media Css */
+    #about h2::after,
+    #resume h2::after,
+    #portfolio h2::after,
+    #contact h2::after {
+        top: 70px;
+        font-size: 32px;
+        left: 18px;
+    }
+
+    #about p,
+    .boxs p {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .boxs {
+        width: auto;
         height: auto;
         margin-top: 20px;
         display: block;
@@ -362,7 +544,7 @@
     }
 
     #box p {
-        width: 300px;
+        width: auto;
     }
 
     #box {
@@ -393,22 +575,22 @@
     }
 
     #resume p {
-        width: 320px;
+        width: auto;
         font-size: 14px;
     }
 
     .skill {
-        width: 350px;
+        width: auto;
     }
 
     /* Portfolio */
 
     #portfolio {
-        width: 400px;
+        width: auto;
     }
 
     #portfo img {
-        width: 370px;
+        width:  365px;
         height: 200px;
         border-radius: 20px;
     }
@@ -416,12 +598,12 @@
     /* Contact Media */
 
     form {
-        width: 400px;
+        width: auto;
         display: block;
     }
 
     #contact {
-        width: 400px;
+        width: auto;
     }
 
     #contact iframe {
@@ -435,5 +617,5 @@
     #contact textarea {
         width: 370px;
     }
-  
+
 }

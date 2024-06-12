@@ -26,20 +26,20 @@ export default function Portfolio() {
                     </div>
 
                     <div className="row">
-                        <div className="col-lg-4 col-sm-6" id='portfo'>
+                        <div className="col-lg-4 col-sm-12 " id='portfo'>
                             <img src={img1} alt="" />
                             <h3>It Company</h3>
                             <p>Web Devlopment</p>
                             <button id='buto'><i class="bi bi-eye"></i></button>
                         </div>
-                        <div className="col-lg-4 col-sm-6" id='portfo'>
+                        <div className="col-lg-4 col-sm-12 " id='portfo'>
                             <img src={img2} alt="" />
                             <h3>Adventure</h3>
                             <p>Web Devlopment</p>
                             <button id='buto'><i class="bi bi-eye"></i></button>
 
                         </div>
-                        <div className="col-lg-4 col-sm-6" id='portfo'>
+                        <div className="col-lg-4 col-sm-12" id='portfo'>
                             <img src={img3} alt="" />
                             <h3>Plantsy</h3>
                             <p>Web Devlopment</p>
@@ -47,21 +47,21 @@ export default function Portfolio() {
 
                         </div>
 
-                        <div className="col-lg-4 col-sm-6" id='portfo'>
+                        <div className="col-lg-4 col-sm-12" id='portfo'>
                             <img src={img4} alt="" />
                             <h3>Hotel</h3>
                             <p>Web Devlopment</p>
                             <button id='buto'><i class="bi bi-eye"></i></button>
 
                         </div>
-                        <div className="col-lg-4 col-sm-6" id='portfo'>
+                        <div className="col-lg-4 col-sm-12" id='portfo'>
                             <img src={img5} alt="" />
                             <h3>E-commerce</h3>
                             <p>Web Devlopment</p>
                             <button id='buto'><i class="bi bi-eye"></i></button>
 
                         </div>
-                        <div className="col-lg-4 col-sm-6" id='portfo'>
+                        <div className="col-lg-4 col-sm-12" id='portfo'>
                             <img src={img6} alt="" />
                             <h3>Ragistration</h3>
                             <p>Web Devlopment</p>
@@ -69,21 +69,21 @@ export default function Portfolio() {
 
                         </div>
 
-                        <div className="col-lg-4 col-sm-6" id='portfo'>
+                        <div className="col-lg-4 col-sm-12" id='portfo'>
                             <img src={img7} alt="" />
                             <h3>Farming</h3>
                             <p>Web Devlopment</p>
                             <button id='buto'><i class="bi bi-eye"></i></button>
 
                         </div>
-                        <div className="col-lg-4 col-sm-6" id='portfo'>
+                        <div className="col-lg-4 col-sm-12" id='portfo'>
                             <img src={img8} alt="" />
                             <h3>Food</h3>
                             <p>Web Devlopment</p>
                             <button id='buto'><i class="bi bi-eye"></i></button>
 
                         </div>
-                        <div className="col-lg-4 col-sm-6" id='portfo'>
+                        <div className="col-lg-4 col-sm-12" id='portfo'>
                             <img src={img9} alt="" />
                             <h3>Admin Panel</h3>
                             <p>Web Devlopment</p>
