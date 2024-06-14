@@ -26,9 +26,9 @@ export default function Profile() {
 
     return (
         <>
-            <div className="container" >
-                <div className="row">
-                    <div className="col-md-12 col-xxl-12">
+            <div className="container" id='pac'>
+                <div className="row " >
+                    <div className="col-md-12 " >
                         <div id="Profile">
 
                             <img src={imge} alt="" />
@@ -38,7 +38,7 @@ export default function Profile() {
                                 <h4>FullStack-Devloper</h4>
                             </div>
                             <button className='download' onClick={downloadResume}>Download CV</button>
-                            {/* <button id='show'>Show Contact</button> */}
+
                             <br />
 
                             <div id='Line'>
