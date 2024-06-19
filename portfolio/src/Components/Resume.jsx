@@ -59,12 +59,41 @@ export default function Resume() {
                 <br />
                 <div className="skill">
                   <h5>Web Design 95%</h5>
-                  <ProgressBar now={95} id='bar' class='progress-95' />  <br />
-                  <h5>Web Devlopment 90%</h5>
-                  <ProgressBar now={90} id='bar' /> <br />
-                  <h5>Git 94%</h5>
-                  <ProgressBar now={94} id='bar' variant="" /> <br />
+                  <div className="progress" style={{ height: "8px", backgroundColor: "#383838" }}>
+                    <div
+                      className="progress-bar"
+                      role="progressbar"
+                      style={{ width: "95%", backgroundColor: '#ceb15a' }}
+                      aria-valuenow={95}
+                      aria-valuemin={0}
+                      aria-valuemax={100}>
 
+                    </div>
+                  </div><br />
+                  <h5>Web Devlopment 90%</h5>
+                  <div className="progress" style={{ height: "8px", backgroundColor: "#383838" }}>
+                    <div
+                      className="progress-bar"
+                      role="progressbar"
+                      style={{ width: "90%", backgroundColor: '#ceb15a' }}
+                      aria-valuenow={90}
+                      aria-valuemin={0}
+                      aria-valuemax={100}>
+
+                    </div>
+                  </div><br />
+                  <h5>Git 94%</h5>
+                  <div className="progress" style={{ height: "8px", backgroundColor: "#383838" }}>
+                    <div
+                      className="progress-bar"
+                      role="progressbar"
+                      style={{ width: "94%", backgroundColor: '#ceb15a' }}
+                      aria-valuenow={95}
+                      aria-valuemin={0}
+                      aria-valuemax={100}>
+
+                    </div>
+                  </div><br />
                 </div>
               </div>
 
