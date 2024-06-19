@@ -60,10 +60,30 @@
         margin-top: 5vh;
     }
 
-    /* #Line {
+    #Line {
+        width: 95%;
+        height: auto;
+        border: 2px solid #383838;
+        padding:30px 0px 30px 0px;
+        margin: 0px;
+        border-bottom: 2px solid #383838;
+        border-left: none;
+        border-right: none;
         display: flex;
-        flex-wrap: wrap;
-    } */
+        gap: 150px;
+        justify-content: start;
+        
+    }
+    
+    .social {
+        display: flex;
+        justify-content: start;
+        margin-top: 20px;
+        color: #9e9e9e;
+        gap: 20px;
+        font-size: 16px;
+    }
+
     #Profile ol {
         display: none;
     }
@@ -82,8 +102,8 @@
         border-top-right-radius: 20px;
         border-bottom-left-radius: 20px;
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-   
- }
+
+    }
 
     #Profile input[type="checkbox"]:checked+ol {
         display: block;
@@ -212,10 +232,28 @@
         height: 150px;
     }
 
-    /* #Line {
-        display: none;
-    } */
+  
+    #Line {
+        width: 95%;
+        height: auto;
+        border: 2px solid #383838;
+        padding:30px 0px 30px 0px;
+        border-bottom: 2px solid #383838;
+        border-left: none;
+        border-right: none;
+        display: flex;
+        justify-content: start;
+        gap: 80px;
+    }
 
+    .social {
+        display: flex;
+        justify-content: start;
+        margin-top: 20px;
+        color: #9e9e9e;
+        gap: 20px;
+        font-size: 16px;
+    }
     .firs {
         display: flex;
     }
@@ -410,7 +448,27 @@
         height: auto;
         margin-right: 10px;
     }
+ 
+    #Line {
+        width: 95%;
+        height: auto;
+        border: 2px solid #383838;
+        padding:30px 0px 30px 0px;
+        border-bottom: 2px solid #383838;
+        border-left: none;
+        border-right: none;
+        justify-content: start;
+        gap: 80px;
+    }
 
+    .social {
+        display: flex;
+        justify-content: start;
+        margin-top: 20px;
+        color: #9e9e9e;
+        gap: 20px;
+        font-size: 16px;
+    }
     .firs {
         display: flex;
     }
@@ -606,6 +664,28 @@
     #Profile button {
         height: auto;
         margin-right: 10px;
+    }
+
+     
+    #Line {
+        width: 95%;
+        height: auto;
+        border: 2px solid #383838;
+        padding:30px 0px 30px 0px;
+        border-bottom: 2px solid #383838;
+        border-left: none;
+        border-right: none;
+        justify-content: start;
+        gap: 80px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: start;
+        margin-top: 20px;
+        color: #9e9e9e;
+        gap: 20px;
+        font-size: 16px;
     }
 
     .firs {
@@ -806,13 +886,35 @@
         height: auto;
         margin-right: 10px;
     }
+ 
+    #Line {
+        width: 95%;
+        height: auto;
+        border: 2px solid #383838;
+        padding:30px 0px 30px 0px;
+        border-bottom: 2px solid #383838;
+        border-left: none;
+        border-right: none;
+        justify-content: start;
+        gap: 80px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: start;
+        margin-top: 20px;
+        color: #9e9e9e;
+        gap: 20px;
+        font-size: 16px;
+    }
     .firs {
         display: flex;
     }
 
     #Profile ol {
         display: none;
-    }   
+    }
+
     #Profile label {
         display: block;
         width: 120px;
@@ -943,7 +1045,7 @@
 
 }
 
-/* 320PX Screen */
+/* 360PX Screen */
 
 @media(min-width:360px)and (max-width:375px) {
 
@@ -1004,7 +1106,27 @@
         height: auto;
         margin-right: 10px;
     }
+ 
+    #Line {
+        width: 95%;
+        height: auto;
+        border: 2px solid #383838;
+        padding:30px 0px 30px 0px;
+        border-bottom: 2px solid #383838;
+        border-left: none;
+        border-right: none;
+        justify-content: start;
+        gap: 80px;
+    }
 
+    .social {
+        display: flex;
+        justify-content: start;
+        margin-top: 20px;
+        color: #9e9e9e;
+        gap: 20px;
+        font-size: 16px;
+    }
     .firs {
         display: flex;
     }
