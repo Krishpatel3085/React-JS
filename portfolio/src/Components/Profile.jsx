@@ -41,56 +41,59 @@ export default function Profile() {
                             </div>
                             <br />
 
-                            <label for="check" class="sihbtn" >Show Contact</label>
-
+                            <label for="check"  >
+                                
+                                <span id='text-s'>Show Contact</span>
+                                <span id='text-i'><i class="bi bi-chevron-down"></i></span>
+                            </label>
                             <input type="checkbox" id="check" />
                             <ol>
 
                                 <div id='Line'>
-                                    
-                                        <div className="info-1">
 
-                                            <div className="info">
-                                                <div className="icon">
-                                                    <i class="bi bi-envelope"></i>
-                                                </div>
-                                                <ul>
-                                                    <li id='title'>EMAIL</li>
-                                                    <li>f388krish28@gmail.com</li>
-                                                </ul>
-                                            </div>
-                                            <div className="info">
-                                                <div className="icon">
-                                                    <i class="bi bi-phone"></i>
-                                                </div>
-                                                <ul>
-                                                    <li id='title'>PHONE</li>
-                                                    <li>+98246 99398</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="info-2">
+                                    <div className="info-1">
 
-                                            <div className="info">
-                                                <div className="icon">
-                                                    <i class="bi bi-calendar3"></i>
-                                                </div>
-                                                <ul>
-                                                    <li id='title'>BIRTHDAY</li>
-                                                    <li>August 30 ,2005</li>
-                                                </ul>
+                                        <div className="info">
+                                            <div className="icon">
+                                                <i class="bi bi-envelope"></i>
                                             </div>
-                                            <div className="info">
-                                                <div className="icon">
-                                                    <i class="bi bi-geo-alt"></i>
-                                                </div>
-                                                <ul>
-                                                    <li id='title'>LOCATION</li>
-                                                    <li>Ahemdabad , Gujarat</li>
-                                                </ul>
-                                            </div>
+                                            <ul>
+                                                <li id='title'>EMAIL</li>
+                                                <li>f388krish28@gmail.com</li>
+                                            </ul>
                                         </div>
-                                   
+                                        <div className="info">
+                                            <div className="icon">
+                                                <i class="bi bi-phone"></i>
+                                            </div>
+                                            <ul>
+                                                <li id='title'>PHONE</li>
+                                                <li>+98246 99398</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="info-2">
+
+                                        <div className="info">
+                                            <div className="icon">
+                                                <i class="bi bi-calendar3"></i>
+                                            </div>
+                                            <ul>
+                                                <li id='title'>BIRTHDAY</li>
+                                                <li>August 30 ,2005</li>
+                                            </ul>
+                                        </div>
+                                        <div className="info">
+                                            <div className="icon">
+                                                <i class="bi bi-geo-alt"></i>
+                                            </div>
+                                            <ul>
+                                                <li id='title'>LOCATION</li>
+                                                <li>Ahemdabad , Gujarat</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <div className="social">
                                     <a href="https://www.linkedin.com/in/kaila-krish3085/"> <i class="bi bi-linkedin"> </i></a>

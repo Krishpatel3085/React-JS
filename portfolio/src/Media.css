@@ -64,7 +64,7 @@
         width: 95%;
         height: auto;
         border: 2px solid #383838;
-        padding:30px 0px 30px 0px;
+        padding: 30px 0px 30px 0px;
         margin: 0px;
         border-bottom: 2px solid #383838;
         border-left: none;
@@ -72,9 +72,9 @@
         display: flex;
         gap: 150px;
         justify-content: start;
-        
+
     }
-    
+
     .social {
         display: flex;
         justify-content: start;
@@ -107,6 +107,10 @@
 
     #Profile input[type="checkbox"]:checked+ol {
         display: block;
+    }
+
+    #text-i {
+        display: none;
     }
 
     #name {
@@ -232,12 +236,12 @@
         height: 150px;
     }
 
-  
+
     #Line {
         width: 95%;
         height: auto;
         border: 2px solid #383838;
-        padding:30px 0px 30px 0px;
+        padding: 30px 0px 30px 0px;
         border-bottom: 2px solid #383838;
         border-left: none;
         border-right: none;
@@ -254,6 +258,7 @@
         gap: 20px;
         font-size: 16px;
     }
+
     .firs {
         display: flex;
     }
@@ -273,6 +278,10 @@
 
     #Profile input[type="checkbox"]:checked+ol {
         display: block;
+    }
+
+    #text-i {
+        display: none;
     }
 
     #name {
@@ -448,12 +457,12 @@
         height: auto;
         margin-right: 10px;
     }
- 
+
     #Line {
         width: 95%;
         height: auto;
         border: 2px solid #383838;
-        padding:30px 0px 30px 0px;
+        padding: 30px 0px 30px 0px;
         border-bottom: 2px solid #383838;
         border-left: none;
         border-right: none;
@@ -469,6 +478,7 @@
         gap: 20px;
         font-size: 16px;
     }
+
     .firs {
         display: flex;
     }
@@ -489,7 +499,9 @@
     #Profile input[type="checkbox"]:checked+ol {
         display: block;
     }
-
+    #text-i {
+        display: none;
+    }
     .download {
         align-self: center;
         margin-inline-start: 50px;
@@ -666,12 +678,12 @@
         margin-right: 10px;
     }
 
-     
+
     #Line {
         width: 95%;
         height: auto;
         border: 2px solid #383838;
-        padding:30px 0px 30px 0px;
+        padding: 30px 0px 30px 0px;
         border-bottom: 2px solid #383838;
         border-left: none;
         border-right: none;
@@ -698,17 +710,25 @@
 
     #Profile label {
         display: block;
-        width: 120px;
+        width: 50px;
         height: 36px;
         right: 0px;
         top: 0px;
         position: absolute;
+        font-size: 15px;
+        font-weight: bold;
     }
 
     #Profile input[type="checkbox"]:checked+ol {
         display: block;
     }
+    .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+        padding-top: 0px;
+    }
+    #text-s {
+        display: none;
 
+    }
     .download {
         align-self: center;
         margin-inline-start: 50px;
@@ -886,12 +906,12 @@
         height: auto;
         margin-right: 10px;
     }
- 
+
     #Line {
         width: 95%;
         height: auto;
         border: 2px solid #383838;
-        padding:30px 0px 30px 0px;
+        padding: 30px 0px 30px 0px;
         border-bottom: 2px solid #383838;
         border-left: none;
         border-right: none;
@@ -907,6 +927,7 @@
         gap: 20px;
         font-size: 16px;
     }
+
     .firs {
         display: flex;
     }
@@ -917,20 +938,28 @@
 
     #Profile label {
         display: block;
-        width: 120px;
+        width: 50px;
         height: 36px;
         right: 0px;
         top: 0px;
         position: absolute;
+        font-size: 15px;
+        font-weight: bolder;
+
     }
 
     #Profile input[type="checkbox"]:checked+ol {
         display: block;
     }
 
+    .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+        padding-top: 0px;
+    }
+    #text-s {
+        display: none;
+    }
     .download {
         align-self: center;
-        /* margin-inline-start: 50px; */
     }
 
     #main {
@@ -1106,12 +1135,12 @@
         height: auto;
         margin-right: 10px;
     }
- 
+
     #Line {
         width: 95%;
         height: auto;
         border: 2px solid #383838;
-        padding:30px 0px 30px 0px;
+        padding: 30px 0px 30px 0px;
         border-bottom: 2px solid #383838;
         border-left: none;
         border-right: none;
@@ -1127,6 +1156,7 @@
         gap: 20px;
         font-size: 16px;
     }
+
     .firs {
         display: flex;
     }
@@ -1137,17 +1167,23 @@
 
     #Profile label {
         display: block;
-        width: 120px;
+        width: 40px;
         height: 36px;
         right: 0px;
         top: 0px;
         position: absolute;
+        font-size: 15px;
     }
 
     #Profile input[type="checkbox"]:checked+ol {
         display: block;
     }
-
+    .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+        padding-top: 0px;
+    }
+    #text-s {
+        display: none;
+    }
     .download {
         align-self: center;
     }
