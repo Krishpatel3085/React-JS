@@ -41,7 +41,8 @@ export default function Profile() {
                             </div>
                             <br />
 
-                            <label for="check">Show Contact</label>
+                            <label for="check" class="sihbtn" >Show Contact</label>
+                            
                             <input type="checkbox" id="check" />
                             <ol>
 
