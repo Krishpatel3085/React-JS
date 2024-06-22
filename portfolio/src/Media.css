@@ -86,6 +86,8 @@
 
     #Profile ol {
         display: none;
+        animation-delay: 2s;
+        animation-duration: 2s;
     }
 
     #Profile label {
@@ -102,11 +104,16 @@
         border-top-right-radius: 20px;
         border-bottom-left-radius: 20px;
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        animation-delay: 2s;
+        animation-duration: 2s;
 
     }
 
     #Profile input[type="checkbox"]:checked+ol {
         display: block;
+        animation-delay: 2s;
+        animation-duration: 2s;
+
     }
 
     #text-i {
@@ -499,9 +506,11 @@
     #Profile input[type="checkbox"]:checked+ol {
         display: block;
     }
+
     #text-i {
         display: none;
     }
+
     .download {
         align-self: center;
         margin-inline-start: 50px;
@@ -722,13 +731,18 @@
     #Profile input[type="checkbox"]:checked+ol {
         display: block;
     }
-    .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+
+    .bi::before,
+    [class^="bi-"]::before,
+    [class*=" bi-"]::before {
         padding-top: 0px;
     }
+
     #text-s {
         display: none;
 
     }
+
     .download {
         align-self: center;
         margin-inline-start: 50px;
@@ -952,12 +966,16 @@
         display: block;
     }
 
-    .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+    .bi::before,
+    [class^="bi-"]::before,
+    [class*=" bi-"]::before {
         padding-top: 0px;
     }
+
     #text-s {
         display: none;
     }
+
     .download {
         align-self: center;
     }
@@ -1099,6 +1117,10 @@
         font-size: 11px;
     }
 
+    .icon {
+        padding: 10px;
+    }
+
     .cont {
         padding-top: 50px;
         display: block;
@@ -1178,12 +1200,17 @@
     #Profile input[type="checkbox"]:checked+ol {
         display: block;
     }
-    .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+
+    .bi::before,
+    [class^="bi-"]::before,
+    [class*=" bi-"]::before {
         padding-top: 0px;
     }
+
     #text-s {
         display: none;
     }
+
     .download {
         align-self: center;
     }
