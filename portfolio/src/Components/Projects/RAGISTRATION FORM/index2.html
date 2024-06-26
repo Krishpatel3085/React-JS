@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud</title>
+  </head>
+  <body>
+    <form action="">
+      Name: <input type="text" id="name" name="name" required /><br /><br />
+
+      Email :
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      Password: <input type="password" id="pass" name="pass" required />
+      <br /><br />
+
+      <input type="submit" />
+    </form>
+    <br /><br />
+    <hr />
+    <hr />
+
+    <br /><br />
+    <table border="1" cellspacing="2" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Sr No.</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+
+      <tbody id="tableData"></tbody>
+    </table>
+
+    <script>
+      let form = document.querySelector("form");
+      let main = document.querySelector("#tableData");
+
+      form.addEventListener("submit", (event) => {
+        let name = event.target.name.value;
+        let email = event.target.email.value;
+        let password = event.target.pass.value;
+        let checkStatus = 0;
+
+        let userData = JSON.parse(localStorage.getItem("userDetails")) || [];
+
+        for (let v of userData) {
+          if (v.email == email) {
+            checkStatus = 1;
+            break;
+          }
+        }
+
+        if (checkStatus == 1) {
+          alert("Email Already Exists!");
+        } else {
+          userData.push({
+            name: name,
+            email: email,
+            password: password
+          });
+
+          localStorage.setItem("userDetails", JSON.stringify(userData));
+          event.target.reset();
+        }
+
+        displayData();
+        event.preventDefault();
+      });
+
+      let displayData = () => {
+        let userData = JSON.parse(localStorage.getItem("userDetails") || "[]");
+
+        let finalData = "";
+
+        userData.forEach((element, index) => {
+          finalData += `
+            <tr>
+              <td>${index + 1}</td>
+              <td>${element.name}</td>
+              <td>${element.email}</td>
+              <td>${element.password}</td>
+              <td><button onclick="editData(${index})">Edit</button>
+                <button onclick="deleteData(${index})">Delete</button></td>
+            </tr>
+          `;
+        });
+
+        main.innerHTML = finalData;
+      };
+
+      // delete
+      function deleteData(index) {
+        let userData = JSON.parse(localStorage.getItem("userDetails") || "[]");
+        userData.splice(index, 1);
+        localStorage.setItem("userDetails", JSON.stringify(userData));
+        displayData();
+      }
+
+      // edit
+      function editData(index) {
+        let userData = JSON.parse(localStorage.getItem("userDetails") || "[]");
+        let editedName = prompt("Enter new name:", userData[index].name);
+        let editedEmail = prompt("Enter new email:", userData[index].email);
+        let editedPassword = prompt(
+          "Enter new password:",
+          userData[index].password
+        );
+
+        userData[index] = {
+          name: editedName,
+          email: editedEmail,
+          password: editedPassword
+        };
+
+        localStorage.setItem("userDetails", JSON.stringify(userData));
+        displayData();
+      }
+
+      displayData();
+    </script>
+  </body>
+</html>
