@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes,  useNavigate } from 'react-router-dom';
 import About from './About';
 import Resume from './Resume';
 import Portfolio from './Portfolio';
@@ -7,8 +7,8 @@ import Contact from './Contact';
 
 export default function Main() {
     const navigate = useNavigate()
-    
-    const [activePage , setActivepage] = useState('about');
+
+    const [activePage, setActivepage] = useState('about');
 
     const gotoResume = () => {
         navigate("/resume")
@@ -30,6 +30,7 @@ export default function Main() {
         setActivepage('contact');
 
     }
+
     return (
         <>
             <div className="container" id='main'>
@@ -42,13 +43,14 @@ export default function Main() {
                         <li onClick={gotoContact} className={activePage === 'contact' ? 'active' : ''} >Contact</li>
                     </ul>
                 </nav>
-                
+
                 <Routes>
 
                     <Route path="/" element={<About />} />
                     <Route path="/resume" element={<Resume />} />
                     <Route path="/portfolio" element={<Portfolio />} />
                     <Route path="/contact" element={<Contact />} />
+                
 
                 </Routes  >
 

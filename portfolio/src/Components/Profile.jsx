@@ -4,25 +4,7 @@ import cv from './img/resume.pdf'
 
 export default function Profile() {
 
-    const downloadResume = () => {
-        fetch(cv, {
-            method: 'GET',
-            headers: { 'Content-Type': 'application/pdf' }
-        })
-            .then(response => response.blob())
-            .then(blob => {
-                const url = window.URL.createObjectURL(blob);
-                const link = document.createElement('a');
-                link.href = url;
-                link.setAttribute('download', cv);
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            })
-            .catch(error => {
-                console.error('Error fetching file:', error);
-            });
-    }
+
 
     return (
         <>
@@ -37,12 +19,14 @@ export default function Profile() {
                                     <h3>Krish Kaila</h3>
                                     <h4>FullStack-Devloper</h4>
                                 </div>
-                                <button className='download' onClick={downloadResume}>Download CV</button>
+                                <button className='download '>
+                                    <a href={cv} download={cv} >Download CV</a>
+                                </button>
                             </div>
                             <br />
 
                             <label for="check"  >
-                                
+
                                 <span id='text-s'>Show Contact</span>
                                 <span id='text-i'><i class="bi bi-chevron-down"></i></span>
                             </label>
@@ -68,7 +52,7 @@ export default function Profile() {
                                             </div>
                                             <ul>
                                                 <li id='title'>PHONE</li>
-                                                <li>+98246 99398</li>
+                                                <li>+91 98246 99398</li>
                                             </ul>
                                         </div>
                                     </div>
