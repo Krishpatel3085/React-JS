@@ -45,7 +45,6 @@ element.style {
   font-family: 'poppins', sans-serif;
   color: white;
   display: flex;
-
 }
 
 #Profile {
@@ -192,14 +191,13 @@ element.style {
 #main {
   width: 90%;
   height: auto;
-  margin: 35px;
+  margin: 35px 20px 0px 0px;
   padding: 0;
   background-color: #1E1E1F;
   border: 2px solid #383838;
   border-radius: 20px;
   position: relative;
   margin-bottom: 4.5vh;
-
 }
 
 

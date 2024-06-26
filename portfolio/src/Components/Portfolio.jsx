@@ -8,6 +8,7 @@ import img6 from './img/Ragistration.png'
 import img7 from './img/farming.png'
 import img8 from './img/Food.png'
 import img9 from './img/Admin.png'
+import { Link } from 'react-router-dom'
 
 export default function Portfolio() {
     return (
@@ -29,7 +30,11 @@ export default function Portfolio() {
                             <img src={img1} alt="" />
                             <h3>It Company</h3>
                             <p>Web Devlopment</p>
-                            <button id='buto'><i class="bi bi-eye"></i></button>
+                            <button id='buto'>
+                                <a href=' https://krishpatel3085.github.io/JQ-Project/'>
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </button>
                         </div>
                         <div className="col-md-4 " id='portfo'>
                             <img src={img2} alt="" />
@@ -42,7 +47,11 @@ export default function Portfolio() {
                             <img src={img3} alt="" />
                             <h3>Plantsy</h3>
                             <p>Web Devlopment</p>
-                            <button id='buto'><i class="bi bi-eye"></i></button>
+                            <button id='buto'>
+                                <a href="https://krishpatel3085.github.io/Plantsy/">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </button>
 
                         </div>
 
@@ -50,21 +59,33 @@ export default function Portfolio() {
                             <img src={img4} alt="" />
                             <h3>Hotel</h3>
                             <p>Web Devlopment</p>
-                            <button id='buto'><i class="bi bi-eye"></i></button>
+                            <button id='buto'>
+                                <a href=" https://krishpatel3085.github.io/RK-HOTEL/">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </button>
 
                         </div>
                         <div className="col-md-4 " id='portfo'>
                             <img src={img5} alt="" />
                             <h3>E-commerce</h3>
                             <p>Web Devlopment</p>
-                            <button id='buto'><i class="bi bi-eye"></i></button>
+                            <button id='buto'>
+                                <a href="https://krishpatel3085.github.io/E-Commerce-Project/">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </button>
 
                         </div>
                         <div className="col-md-4 " id='portfo'>
                             <img src={img6} alt="" />
                             <h3>Ragistration</h3>
                             <p>Web Devlopment</p>
-                            <button id='buto'><i class="bi bi-eye"></i></button>
+                            <button id='buto'>
+                                <a href="https://krishpatel3085.github.io/RAGISTRATION-FORM/">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </button>
 
                         </div>
 
@@ -72,14 +93,22 @@ export default function Portfolio() {
                             <img src={img7} alt="" />
                             <h3>Farming</h3>
                             <p>Web Devlopment</p>
-                            <button id='buto'><i class="bi bi-eye"></i></button>
+                            <button id='buto'>
+                                <a href="https://krishpatel3085.github.io/FARM-PROJECT/">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </button>
 
                         </div>
                         <div className="col-md-4 " id='portfo'>
                             <img src={img8} alt="" />
                             <h3>Food</h3>
                             <p>Web Devlopment</p>
-                            <button id='buto'><i class="bi bi-eye"></i></button>
+                            <button id='buto'>
+                                <a href=" https://krishpatel3085.github.io/BOOSTRAP-PROJECT/">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </button>
 
                         </div>
                         <div className="col-md-4 " id='portfo'>
