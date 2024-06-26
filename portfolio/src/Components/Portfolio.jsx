@@ -9,7 +9,6 @@ import img7 from './img/farming.png'
 import img8 from './img/Food.png'
 import img9 from './img/Admin.png'
 
-
 export default function Portfolio() {
     return (
         <>
