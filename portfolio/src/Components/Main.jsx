@@ -12,7 +12,7 @@ export default function Main() {
 
     const gotoResume = () => {
         navigate("/resume")
-        setActivepage('resume');
+        setActivepage('resume');    
     }
 
     const gotoAbout = () => {
