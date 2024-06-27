@@ -81,8 +81,8 @@ export default function Profile() {
                                 </div>
                                 <div className="social">
                                     <a href="https://www.linkedin.com/in/kaila-krish3085/"> <i class="bi bi-linkedin"> </i></a>
-                                    <i class="bi bi-github"></i>
-                                    <i class="bi bi-instagram"></i>
+                                    <a href="https://github.com/Krishpatel3085">  <i class="bi bi-github"></i></a>
+                                    <a href="https://www.instagram.com/krish.patel_3085/?next=%2F"><i class="bi bi-instagram"></i></a>
                                     <br /><br />
                                 </div>
                             </ol>
