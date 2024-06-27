@@ -40,7 +40,11 @@ export default function Portfolio() {
                             <img src={img2} alt="" />
                             <h3>Adventure</h3>
                             <p>Web Devlopment</p>
-                            <button id='buto'><i class="bi bi-eye"></i></button>
+                            <button id='buto'>
+                                <a href="https://krishpatel3085.github.io/CSS-PROJECT/">
+                                    <i class="bi bi-eye"></i>
+                                    </a>
+                            </button>
 
                         </div>
                         <div className="col-md-4 " id='portfo'>
